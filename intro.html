@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title> Welcome to Wooseok's site</title>
+    <style>
+        *{
+            font-family:"맑은고딕",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;}
+            header h1{
+                font-size: x-large;
+            }
+            a{text-decoration: none;}
+            ul{list-style-type: none;}
+            nav ul{ 
+                text-align: center;
+                border-top: 2px solid lightsalmon;
+                border-bottom: 2px solid lightsalmon;
+                padding: 15px 0px;
+            }
+            nav ul li{
+                display: inline;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                padding: 15px 25px;
+            }
+            nav ul li:hover {
+                background-color: lightblue;
+            }
+            nav ul a:hover {
+                color: white;
+            }
+        </style>
+        
+</head>
+<body>
+    <header>
+        <h1>LeeWooSeok Home</h1>
+    </header>
+        <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="profile">나의 사진<br>
+            <img src="my.jpg" width="200",height="200">
+            <h2> 좋아하는 음악</h2>
+            <audio src="media/music01.mp3" controls>
+                지원하지 않는 브라우저입니다.
+            </audio>
+            <h2>북극곰을 살려요~~</h2>
+            <video src="media/movie.mp4" controls></video>
+            <hr>
+            <h2>내가 가보고 싶은 여행지</h2>
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/MWze4S82hxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+            
+            <h2>My profile</h2>
+            <table border="1">
+                <tr>
+                    <th>년도</th>
+                    <th>내용</th>
+                    <th>비고</th>
+                </tr>
+                <tr>
+                    <td>현재</td>
+                    <td>동의대학교 e비즈니스학과</td>
+                    <td>재학중</td>
+                </tr>
+                <tr>
+                    <td>내용01</td>
+                    <td>내용02</td>
+                    <td>내용03</td>
+                </tr>
+                <tr>
+                    <td>내용01</td>
+                    <td>내용02</td>
+                    <td>내용03</td>
+                </tr>
+              <!--tr*3>td*3{내용$$}-->
+            </table>
+
+        </div>
+        <div id="portfolio">포트폴리오를 테이블로 표시</div>
+        <div id="contact">★나의 주소와 이메일</div>
+        <br>
+        주소 : 가야동 464-48 201호 이메일: dntjr794@naver.com
+        <br>
+        <div id="link">
+            <h2>즐겨찾는 사이트</h2>
+            <a href="http://www.deu.ac.kr" target="_blank">동의대학교</a><br>
+            <a href="http://www.google.com">구글</a><br>
+            <a href="./start.html">연습문서</a><br>
+            <a href="#profile">나의 프로필</a>
+        </div>
+    </section>
+    <div id="login">
+        <form action="#" method="post">
+            아이디 : <input type="text" name="id"><br>
+            비밀번호 : <input type="password" name="pw"><br>
+            <input type="submit" value="로그인">
+            <input type="reset" value="취소">
+        </form>
+    </div>
+    <footer>
+        <div id="copyright">★주소와 저작권</div>
+        <div id="sns">인스타 주소 : eseo__k 연락처 : 01058729312</div>
+    </footer>  
+</body>
+</html>
