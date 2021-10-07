@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title> Welcome to Wooseok's site</title>
+    <link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="./css/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            font-family:"맑은고딕",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;}
+            header h1{
+                font-size: x-large;
+            }
+            a{text-decoration: none;}
+            ul{list-style-type: none;}
+            nav ul{ 
+                text-align: center;
+                border-top: 2px solid lightsalmon;
+                border-bottom: 2px solid lightsalmon;
+                padding: 15px 0px;
+            }
+            nav ul li{
+                display: inline;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                padding: 15px 25px;
+            }
+            nav ul li:hover {
+                background-color: lightblue;
+            }
+            nav ul a:hover {
+                color: white;
+            
+            }
+            section{
+        display: flex;
+    }
+    .main{
+        flex:4;
+    }
+    .right{
+        flex:1;
+    }
+    img{
+        border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  box-shadow: 5px 5px 10px grey;
+    }
+    #sns{color: slateblue;
+
+    }
+    #address{color: slateblue;}
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: orange;}
+ol {
+  background: pink;
+  padding: 10px;
+  size
+}
+ol li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 10px;
+}
+        </style>
+        
+</head>
+<body>
+    <header>
+        <h1 class="w3-text-indigo w3-xxlarge">LeeWooSeok Home</h1>
+    </header>
+        <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article class="main">
+        <h2><div id="profile" >나의 사진</h2>
+            <img src="my.jpg" width="200",height="200">
+            <br>
+            <hr>
+            <div id="portfolio">※포트폴리오를 테이블로 표시</div>
+            <h2>My profile</h2>
+            <table class="w3-table-all w3-hoverable">
+                <tr class="w3-indigo">
+                    <th>년도</th>
+                    <th>내용</th>
+                    <th>비고</th>
+                </tr>
+                <tr>
+                    <td>현재</td>
+                    <td>동의대학교 e비즈니스학과</td>
+                    <td>재학중</td>
+                </tr>
+                <tr>
+                    <td>22년도</td>
+                    <td>비나우 코스매틱</td>
+                    <td>근무예정</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+              <!--tr*3>td*3{내용$$}-->
+            </table>
+            <hr>
+            <h2>보유 자격증</h2>
+            <ol>
+                <li>Erp 물류 정보 관리사 2급</li>
+                <li>Erp 생산 정보 관리사 2급</li>
+                <li>빅데이터 전문가</li>
+                <li>마케팅 기획 전문가</li>
+                <li>컴퓨터 활용능력1급</li>
+              </ol>
+            
+            <hr>
+            <div>
+              <h2>SWOT 분석</h2>
+<table>
+    <tr>
+      <th>Strength-강함<br>(내적요인)</th>
+      <th>Weakness-약점<br>(내적요인)</th>
+      <th>Opportunity-기회<br>(외적요인)</th>
+      <th>Threat-위협<br>(외적요인)</th>
+    </tr>
+    <tr>
+      <td>성실함</td>
+      <td>성적 불안정</td>
+      <td>실무형 인재를 뽑는 추세</td>
+      <td>취업난 가중</td>
+    </tr>
+    <tr>
+      <td>빠른 상황 판단력</td>
+      <td>외국어 부족</td>
+      <td>소통형 인간을 요구</td>
+      <td>영어실력이 뛰어난 사람 증가</td>
+    </tr>
+   
+  </table>
+            </div>
+            <hr>				
+            <h2> 좋아하는 음악</h2>
+            <audio src="media/music01.mp3" controls>
+                지원하지 않는 브라우저입니다.
+            </audio>
+            <hr>
+            <h2>북극곰을 살려요~~</h2>
+            <video src="media/movie.mp4" controls></video>
+            <hr>
+            <h2>내가 가보고 싶은 여행지</h2>
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/MWze4S82hxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+            
+        
+
+        </div>
+        
+           </article>
+        <aside class="right">
+            <div id="link">
+                <h2>즐겨찾는 사이트</h2>
+                <a href="http://www.deu.ac.kr" target="_blank">동의대학교</a><br>
+                <a href="http://www.google.com">구글</a><br>
+                <a href="./start.html">연습문서</a><br>
+                <a href="#profile">나의 프로필</a>
+            </div>
+        
+        <div id="login">
+            <form action="#" method="post" class="w3-container">
+                아이디 : <input class="w3-input w3-border w3-light-grey" type="text" name="id" ><br>
+                비밀번호 : <input class="w3-input w3-border w3-light-grey" type="password" name="pw"><br>
+                <input class="w3-btn w3-blue-grey" type="submit" value="로그인">
+                <input class="w3-btn w3-blue-grey" type="reset" value="취소">
+            </form>
+        </div>
+    </aside> 
+</section>
+    <footer>
+        <div id="contact">★나의 주소와 이메일</div>          
+        <div id="address"> 주소 : 가야동 464-48 201호 이메일: dntjr794@naver.com</div>
+
+        <div id="copyright">★주소와 저작권</div>
+        <div id="sns">인스타 주소 : eseo__k 연락처 : 01058729312</div>
+    </footer>  
+</body>
+</html>
